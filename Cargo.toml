@@ -1,0 +1,18 @@
+[package]
+name = "uniffi-bindgen-kotlin"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "uniffi-bindgen-kotlin"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+askama = { version = "0.11", default-features = false, features = ["config"] }
+clap = { version = "2", default-features = false }
+heck = "0.3"
+uniffi_bindgen = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+paste = "1.0"
+serde = "1"
+toml = "0.5"
