@@ -51,10 +51,10 @@ impl uniffi_bindgen::BindingGeneratorConfig for Config {
         bindings.get("kotlin").cloned()
     }
 
-    fn get_config_defaults(_ci: &ComponentInterface) -> Vec<(String, toml::Value)> {
+    fn get_config_defaults(ci: &ComponentInterface) -> Vec<(String, toml::Value)> {
         vec![
-            ("package_name".into(), "uniffi".into()),
-            ("cdylib_name".into(), "uniffi".into()),
+            ("package_name".into(), format!("uniffi.{}", ci.namespace()).into()),
+            ("cdylib_name".into(), format!("uniffi_{}", ci.namespace()).into()),
         ]
     }
 }

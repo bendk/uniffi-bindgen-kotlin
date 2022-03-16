@@ -16,3 +16,17 @@ uniffi_bindgen = { git = "https://github.com/bendk/uniffi-rs.git", branch="exter
 paste = "1.0"
 serde = "1"
 toml = "0.5"
+
+[dev-dependencies]
+glob = "0.3"
+uniffi_testing = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-fixture-coverall = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-arithmetic = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-geometry = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-rondpoint = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-todolist = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-sprites = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-fixture-time = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-example-custom-types = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-fixture-callbacks = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
+uniffi-fixture-ext-types = { git = "https://github.com/bendk/uniffi-rs.git", branch="external-kotlin" }
